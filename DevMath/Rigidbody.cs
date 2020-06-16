@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DevMath
+﻿namespace DevMath
 {
+    //NOTE: This class only updates the Velocity variable
     public class Rigidbody
     {
         public Vector2 Velocity

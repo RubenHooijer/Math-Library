@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DevMath
+﻿namespace DevMath
 {
     public struct Vector2
     {
@@ -37,6 +31,7 @@ namespace DevMath
             return a + ((b - a) * t);
         }
 
+        //Returns the angle between the two vectors
         public static float Angle(Vector2 lhs, Vector2 rhs)
         {
             return (float)(Math.Atan2(lhs.x, lhs.y) - Math.Atan2(rhs.x, rhs.y));

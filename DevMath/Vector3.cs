@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DevMath
+﻿namespace DevMath
 {
     public struct Vector3
     {
@@ -39,6 +33,7 @@ namespace DevMath
             return (lhs.x * rhs.x) + (lhs.y * rhs.y) + (lhs.z * rhs.z);
         }
 
+        //Return the perpendicular vector of the two input vectors
         public static Vector3 Cross(Vector3 lhs, Vector3 rhs)
         {
             return new Vector3((lhs.y * rhs.z) - (lhs.z * rhs.y), (lhs.z * rhs.x) - (lhs.x * rhs.z), (lhs.x * rhs.y) - (lhs.y * rhs.x));
